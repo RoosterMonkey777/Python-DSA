@@ -110,3 +110,63 @@ reversed_list = list(reversed(myList2))
 print('\nreverese list using reversed() function')
 print(reversed_list)
 #------------------------------------------------------------------------------------------------------
+
+
+#------------------------------------------------------------------------------------------------------
+## Removing Elements from the List
+
+# - Elements can be removed from the List by using the built-in remove() function
+# - An Error arises if the element doesn’t exist in the list 
+# - Remove() method only removes one element at a time
+# - To remove a range of elements, the iterator is used 
+# - The remove() method removes the specified item.
+
+# Complexities for Deleting elements in a Lists(remove() method):
+# Time Complexity: O(n)
+# Space Complexity: O(1)
+
+# Python program to demonstrate Removal of elements in a List
+ 
+# Creating a List
+List = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+print("\nInitial List: ")
+print(List)
+
+# Removing elements from List using Remove() method
+List.remove(5)
+List.remove(6)
+print("\nList after Removal of two elements: ")
+print(List)
+
+# Removing using iterator
+# Creating a List
+List = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+# Removing elements from List using iterator method
+for i in range(1, 5):
+    List.remove(i)
+print("\nList after Removing a range of elements: ")
+print(List)
+
+
+# Method 2: Using pop() function
+# - pop() function can also be used to remove and return an element from the list
+# - by default it removes only the last element of the list
+# - to remove an element from a specific position of the List, index of the element is passed as argument to pop()
+
+# Complexities for Deleting elements in a Lists(pop() method):
+# Time Complexity: O(1)/O(n) (O(1) for removing the last element, O(n) for removing the first and middle elements)
+# Space Complexity: O(1)
+
+List = [1,2,3,4,5]
+
+# removing element from set using pop()
+List.pop()
+print("\nList after popping an element: ")
+print(List)
+
+# Removing element at a specific location from the set using the pop() method
+List.pop(2)
+print("\nList after popping a specific element: ")
+print(List)
+
+#------------------------------------------------------------------------------------------------------
