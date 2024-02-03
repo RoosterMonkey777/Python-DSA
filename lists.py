@@ -93,3 +93,26 @@ print(List[-1])
 # print the third last element of list
 print(List[-3])
 # ------------------------------------------------------------------------------------------------------------
+
+
+# ------------------------------------------------------------------------------------------------------------
+## Complexities for Accessing elements in a List:
+# Time Complexity: O(1)
+# Space Complexity: O(1)
+# ------------------------------------------------------------------------------------------------------------
+
+
+# ------------------------------------------------------------------------------------------------------------
+## Getting the size of Python list
+# - python len() is used to get the length of the list
+
+# Creating a List
+List1 = []
+print('\nlength of empty list:')
+print(len(List1))
+ 
+# Creating a List of numbers
+List2 = [10, 20, 14]
+print('\nlength of non-empty list:')
+print(len(List2))
+# ------------------------------------------------------------------------------------------------------------
